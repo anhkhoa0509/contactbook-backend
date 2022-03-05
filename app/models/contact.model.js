@@ -1,4 +1,4 @@
-const mongoose = require("mogoose");
+const mongoose = require("mongoose");
 
 const schema = mongoose.Schema(
   {
@@ -25,3 +25,6 @@ schema.method("toJSON", () => {
 });
 
 module.exports = mongoose.model("contact", schema);
+
+
+

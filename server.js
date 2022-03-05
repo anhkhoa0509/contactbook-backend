@@ -1,6 +1,6 @@
 const app = require("./app");
 const config = require("./app/config");
-const mongoose = require("mogoose");
+const mongoose = require("mongoose");
 
 mongoose
   .connect(config.db.uri)
@@ -17,3 +17,5 @@ const PORT = config.app.port;
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}.`);
 });
+
+

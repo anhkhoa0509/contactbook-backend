@@ -45,6 +45,8 @@ exports.findAll = async (req, res, next) => {
   }
 };
 
+
+
 exports.findOne = async (req, res, next) => {
   const { id } = req.params;
   const condition = {
@@ -111,6 +113,9 @@ exports.delete = async (req, res, next) => {
     );
   }
 };
+
+
+
 exports.deleteAll = async (req, res, next) => {
   try {
     const data = await Contact.deleteMany({});
@@ -123,6 +128,8 @@ exports.deleteAll = async (req, res, next) => {
     );
   }
 };
+
+
 exports.findAllFavorite = async (req, res, next) => {
   try {
     const documents = await Contact.find({ favorite: true });
